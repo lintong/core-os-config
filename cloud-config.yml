@@ -1,6 +1,6 @@
 #cloud-config
 
-hostname:  coreos01
+hostname: coreos01
 
 coreos:  
   etcd:    
@@ -15,8 +15,8 @@ coreos:
 
 users:
   - name: lintong
-    coreos-ssh-import-github: lintong
+    passwd: $6$rounds=4096$U.09rxYXynk3hsq$z9c0IY3ittszzKH8NE9ODd97t3pMZ5CM6Wol8y3VHIjGvxgDKBobU9wmegPxhVYGlFByZpe0A1BzucDpM8rsF.
   
-  - groups:
-    - sudo
-    - docker
+groups:
+  - sudo
+  - docker
